@@ -8,6 +8,8 @@ import SupportIcon from './icons/IconSupport.vue'
 </script>
 
 <template>
+  <br />
+  <br />
   <WelcomeItem>
     <template #icon>
       <DocumentationIcon />
@@ -28,7 +30,8 @@ import SupportIcon from './icons/IconSupport.vue'
     </ol>
 
   </WelcomeItem>
-
+  <br />
+  <br />
   <WelcomeItem>
     <template #icon>
       <ToolingIcon />
@@ -42,7 +45,8 @@ import SupportIcon from './icons/IconSupport.vue'
     
     <br />
   </WelcomeItem>
-
+  <br />
+  <br />
   <WelcomeItem>
     <template #icon>
       <EcosystemIcon />
@@ -58,7 +62,8 @@ import SupportIcon from './icons/IconSupport.vue'
       <li><pre>Perguruan Tinggi          : <a href="https://uir.ac.id/" target="_blank">Universitas Islam Riau</a></pre></li>
     </ul>
   </WelcomeItem>
-
+  <br />
+  <br />
   <WelcomeItem>
     <template #icon>
       <CommunityIcon />
@@ -76,7 +81,8 @@ import SupportIcon from './icons/IconSupport.vue'
       <li>Saya punya senang ketika bermain Bulutangkis, tetapi sudah jarang. Tiap kali dalam sebulan, saya juga senang bermain Voli, walaupun awalnya kesusahan.</li>
     </ol>
   </WelcomeItem>
-
+  <br />
+  <br />
   <WelcomeItem>
     <template #icon>
       <SupportIcon />
@@ -94,3 +100,67 @@ import SupportIcon from './icons/IconSupport.vue'
     </ul>
   </WelcomeItem>
 </template>
+
+<style scoped>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.welcome-item {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-item:nth-child(even) {
+  transform: translateX(20px);
+}
+
+.welcome-item:nth-child(odd) {
+  transform: translateX(-20px);
+}
+
+.welcome-item .icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.welcome-item .heading {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.welcome-item ol, .welcome-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.welcome-item ol li, .welcome-item ul li {
+  margin-bottom: 10px;
+}
+
+.welcome-item ol li:before, .welcome-item ul li:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.welcome-item a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.welcome-item a:hover {
+  color: #23527c;
+}
+</style>

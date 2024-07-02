@@ -5,8 +5,7 @@ import TheWelcome from './components/TheWelcome.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/Gambar.jpg" width="300" height="300" />
-
+    <img alt="Vue logo" class="logo" src="./assets/Gambar.jpg" width="300" height="550" />
     <div class="wrapper">
       <HelloWorld msg="Biografi tentang Diriku (Boilerplate)" />
     </div>
